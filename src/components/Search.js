@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import PropTypes from 'prop-types';
+import React, { useState, useEffect } from "react";
+import PropTypes from "prop-types";
 
 const Search = ({ onHandleSearch }) => {
-  const [search, setSearch] = useState('');
+  const [search, setSearch] = useState("");
 
   useEffect(() => {
     onHandleSearch(search);
@@ -25,7 +25,7 @@ const Search = ({ onHandleSearch }) => {
 };
 
 Search.propTypes = {
-  onHandleSearch: PropTypes.func
+  onHandleSearch: PropTypes.func,
 };
 
 export default Search;
